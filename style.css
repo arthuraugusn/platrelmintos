@@ -1,0 +1,167 @@
+/* Estilos para o site sobre Platelmintos */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos para o cabeçalho */
+body {
+  display: flex;
+}
+header {
+  background-color: #ead8cb;
+  color: #3a3a3a;
+  padding: 20px;
+  width: auto;
+  text-align: start;
+  height: 100vh;
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  padding-bottom: 60px;
+}
+
+nav {
+  display: flex;
+  height: auto;
+
+  text-align: start;
+}
+
+nav ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  margin: 0;
+  flex-direction: column;
+  height: 100%;
+  align-items: start;
+  justify-content: space-between;
+}
+
+nav ul li {
+  display: flex;
+  width: 100%;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+nav ul li a {
+  color: #3a3a3a;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para as seções */
+main {
+  margin-left: 210px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgb(251, 238, 224);
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 100vh;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para o rodapé */
+footer {
+  background-color: #ead8cb;
+  color: #3a3a3a;
+  padding: 20px;
+  width: auto;
+  font-size: 1.4rem;
+  text-align: center;
+  display: flex;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+}
+
+/* Estilos para animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slideInRight {
+  animation-name: slideInRight;
+  animation-duration: 1s;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+/* Estilos para a interatividade */
+a {
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  transform: scale(1.1);
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+nav ul li:hover {
+  transform: scale(1.1);
+}
+
+img:hover {
+  transform: scale(1.05);
+}
