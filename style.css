@@ -7,9 +7,6 @@
 }
 
 /* Estilos para o cabeçalho */
-body {
-  display: flex;
-}
 header {
   background-color: #ead8cb;
   color: #3a3a3a;
@@ -23,6 +20,8 @@ header {
 }
 
 h1 {
+  font-size: 2rem;
+  font-family: monospace;
   padding-bottom: 60px;
 }
 
@@ -49,6 +48,7 @@ nav ul li {
   display: flex;
   width: 100%;
   font-size: 1.2rem;
+  font-family: monospace;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -71,14 +71,26 @@ main {
 section {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-direction: column;
   height: 100vh;
+  padding-left: 50px;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 2.4rem;
   margin-bottom: 20px;
+  font-weight: 100;
+  font-family: monospace;
+}
+
+p,
+section ul li {
+  font-size: 1.2rem;
+  text-align: start;
+  font-weight: 200;
+  font-style: italic;
+  font-family: monospace;
 }
 
 /* Estilos para o rodapé */
@@ -88,11 +100,11 @@ footer {
   padding: 20px;
   width: auto;
   font-size: 1.4rem;
-  text-align: center;
+  text-align: end;
   display: flex;
   right: 0;
   bottom: 0;
-  justify-content: center;
+  justify-content: end;
 }
 
 /* Estilos para animações */
